@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,900;1,200&display=swap');
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .left-container{
+    min-height: 100vh;
+    width: 100%;
+  }
+  .left-container > img {
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  .left-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px; /* Tamaño del círculo */
+    height: 150px; /* Tamaño del círculo */
+    background-color: rgba(255, 0, 0, 0.5); /* Color del círculo (rojo con transparencia) */
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.left-container::after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    width: 100px; /* Tamaño del segundo círculo */
+    height: 100px;
+    background-color: rgba(0, 255, 0, 0.5); /* Color del segundo círculo (verde con transparencia) */
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+
+.right-container{
+  background-color: #d6d6d6;
+  border-left: 5px solid #d6d6d6;; /* Borde izquierdo de 5px en color negro */
+  border-top-left-radius: 50px; /* Radio en la esquina superior izquierda */
+  border-bottom-left-radius: 50px; /* Radio en la esquina inferior izquierda */
+}
+
+input[type=submit]{
+  background-color: #FF725E;
+  border: none;
+}
+label {
+  color: #1a1a1a;
+}
+
+input[type=number], input[type=text]{
+  border-radius: 0px;
+}
